@@ -25,5 +25,6 @@ urlpatterns = [
     path('index/', include("index.urls")),
     path('login/',include("login.urls")),
     path('register/',include('register.urls')),
-    path('charts/',include('echarts.urls'))
+    path('charts/',include('echarts.urls')),
+    path('recommender/',include('recommender.urls'))
 ]

@@ -1,0 +1,56 @@
+<!-- myechartsite/djoncharts/templates/djoncharts/pyecharts.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<script src="echarts.min.js"></script>-->
+    <title>Proudly presented by PycCharts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form action="" method="POST" class="navbar-form navbar-left" role="search">
+            <h1>输入user_tel</h1>
+            <div>
+                <input type="text" placeholder="13900000005" required="13900000005" id="user_tel" name="user_tel" class="form-control" aria-describedby="sizing-addon3/>
+            </div>
+            <div style="margin-left: 110px">
+                <input type="submit" value="确定" class="btn btn-default" />
+            </div>
+        </form>
+        <table class="table table-hover" border="1">
+                <tr>
+                    <td align="center">app ID</td>
+                    <td align="center">app </td>
+                    <!--<td align="center">评论人数</td>-->
+                    <!--<td align="center">综合评分</td>-->
+                </tr>
+                {% if flag %}
+                    {% for v in app_dic.values %}
+                        <tr>
+                            <td align="center">{{ v.app_id }}</td>
+                            <td align="center">{{ v.name }}</td>
+                        </tr>
+                    {% endfor %}
+                <!--{% elif not flag%}-->
+                    <!--{% for one in movie_list %}-->
+                        <!--<tr>-->
+                            <!--<td align="center">{{ one.mid }}</td>-->
+                            <!--<td align="center">{{ one.name }}</td>-->
+                            <!--<td align="center">{{ one.genres }}</td>-->
+                        <!--</tr>-->
+                    <!--{% endfor %}-->
+                {% endif %}
+            </table><!--放在表格中显示-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

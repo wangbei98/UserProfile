@@ -42,7 +42,7 @@ def line3d():
 app_tab = pd.read_csv('/Users/bellick/MyProjects/UserProfile/data/appTab.txt',encoding='gb18030',sep='|',names=['app_id','name','male','female','_24','25_30','31_35','36_40','40_'])
 app_tab = app_tab.set_index('app_id')
 user_data = pd.read_csv('/Users/bellick/MyProjects/UserProfile/data/userdata_new.txt',sep='|',names = ['tel','app_id','date','time'])
-
+user_data = user_data.set_index('tel')
 
 @csrf_exempt
 def charts(request):
