@@ -7,7 +7,23 @@ a website, very po , based on Django
 * show  User portrait of certain app or website 
 * Recommend some similar apps for certain user
 
+# requirements
+
+* Django
+* mysql
+* pymysql
+* pandas
+* numpy
+* pyecharts
+* math
+
+# data
+
+/data
+
 ## Rendering
+
+
 
 ![](http://ww4.sinaimg.cn/large/006tNc79ly1g39bvyynl8j307m03njrg.jpg)
 
@@ -20,3 +36,8 @@ a website, very po , based on Django
 ![屏幕快照 2019-05-29 下午4.39.50](http://ww2.sinaimg.cn/large/006tNc79ly1g3ia23ydncj31330ehabb.jpg)
 
 ![屏幕快照 2019-05-29 下午4.41.38](http://ww4.sinaimg.cn/large/006tNc79ly1g3ia2bsdujj31390fz75x.jpg)
+
+project:
+
+[github.com/bellick/UserProfile](github.com/bellick/UserProfile)
+
